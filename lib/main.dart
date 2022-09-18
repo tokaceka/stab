@@ -17,16 +17,8 @@ class StabApp extends StatelessWidget {
       routeInformationParser: router.routeInformationParser,
       routerDelegate: router.routerDelegate,
       title: 'Štáb',
-      theme: ThemeData(
-        useMaterial3: true,
-        colorScheme: lightColorScheme,
-        textTheme: textTheme(context),
-      ),
-      darkTheme: ThemeData(
-        useMaterial3: true,
-        colorScheme: darkColorScheme,
-        textTheme: textTheme(context),
-      ),
+      theme: buildTheme(lightColorScheme),
+      darkTheme: buildTheme(darkColorScheme),
     );
   }
 }

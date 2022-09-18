@@ -65,5 +65,9 @@ const darkColorScheme = ColorScheme(
   surfaceTint: Color(0xFF4DDAD8),
 );
 
-TextTheme textTheme(BuildContext context) =>
-    GoogleFonts.ralewayTextTheme(Theme.of(context).textTheme);
+ThemeData buildTheme(ColorScheme colorScheme) {
+  final baseTheme = ThemeData(useMaterial3: true, colorScheme: colorScheme);
+  return baseTheme.copyWith(
+    textTheme: GoogleFonts.ralewayTextTheme(baseTheme.textTheme),
+  );
+}
