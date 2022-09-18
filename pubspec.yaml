@@ -1,5 +1,5 @@
 name: stab
-description: A new Flutter project.
+description: Aplikace Štáb pro organizaci dětských táborů Tokačeka.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
