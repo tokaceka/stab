@@ -19,9 +19,7 @@ class StabApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      routeInformationProvider: router.routeInformationProvider,
-      routeInformationParser: router.routeInformationParser,
-      routerDelegate: router.routerDelegate,
+      routerConfig: router,
       title: 'Štáb',
       theme: buildTheme(lightColorScheme),
       darkTheme: buildTheme(darkColorScheme),

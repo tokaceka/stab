@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:stab/registrations/registration_details.dart';
 
 import 'home/home.dart';
+import 'registrations/registration_details.dart';
 import 'registrations/registrations.dart';
 
 final router = GoRouter(
